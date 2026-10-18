@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción de Sacramento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Portal Parroquial de Sacramentos</h1>
+        <p>Formulario de Inscripción Eclesiástica</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sacramentos.html">Sacramentos</a>
+        <a href="ministros.html">Ministros</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="inscripcion.html">Inscripción</a>
+    </nav>
+
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos del Solicitante</legend>
+                <label for="codigo">Código de Registro:</label>
+                <input type="text" id="codigo" name="codigo" placeholder="SAC-001" maxlength="10" required>
+
+                <label for="responsable">Sacerdote Celebrante:</label>
+                <select id="responsable" name="responsable" required>
+                    <option value="">Selecciona un celebrante</option>
+                    <option value="carlos">Padre Carlos</option>
+                    <option value="juan">Padre Juan</option>
+                    <option value="romero">Monseñor Romero</option>
+                </select>
+
+                <label for="fecha">Fecha de Celebración:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sacramento</legend>
+                <p>Seleccione el Sacramento:</p>
+                <input type="radio" id="bautismo" name="sacramento" value="bautismo" required>
+                <label for="bautismo" style="display:inline;">Bautismo</label>
+
+                <input type="radio" id="comunion" name="sacramento" value="comunion" style="margin-left:15px;">
+                <label for="comunion" style="display:inline;">Primera Comunión</label>
+
+                <input type="radio" id="matrimonio" name="sacramento" value="matrimonio" style="margin-left:15px;">
+                <label for="matrimonio" style="display:inline;">Matrimonio</label>
+
+                <label for="asistentes" style="margin-top:15px;">Estimado de Asistentes:</label>
+                <input type="number" id="asistentes" name="asistentes" min="1" max="100" value="30">
+            </fieldset>
+
+            <fieldset>
+                <legend>Observaciones</legend>
+                <label for="observaciones">Notas adicionales:</label>
+                <textarea id="observaciones" name="observaciones" rows="4" placeholder="Ingrese nombres de padrinos o notas pastorales..."></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar Solicitud</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 Portal Parroquial - Todos los derechos reservados</small></p>
+    </footer>
+</body>
+</html>

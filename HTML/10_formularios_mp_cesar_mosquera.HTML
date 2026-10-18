@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción de Sacramentos</title>
+</head>
+
+<body>
+    <h1>Inscripción Parroquial de Sacramentos</h1>
+
+    <form action="/registro-sacramento" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre del Feligrés</label><br>
+                    <input type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="Ej. Juan" 
+                        minlength="3" 
+                        maxlength="40" 
+                        required>
+                </td>
+                <td>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" 
+                        id="apellido" 
+                        name="apellido" 
+                        placeholder="Ej. Pérez">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Contraseña de Portal</label><br>
+                    <input type="password" id="password" name="password">
+                </td>
+                <td>
+                    <label for="password_confirm">Confirmar Contraseña</label><br>
+                    <input type="password" id="password_confirm" name="password_confirm">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="edad">Edad</label><br>
+                    <input type="number" id="edad" name="edad">
+                </td>
+                <td>
+                    <label for="aporte">Aporte Parroquial ($)</label><br>
+                    <input 
+                        type="number" 
+                        id="aporte" 
+                        name="aporte"
+                        min="10"
+                        max="100"
+                        value="50"
+                        step="5"
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Tipo de Celebración:</p>
+                    <input type="radio" id="comunitaria" name="tipo_celebracion" value="comunitaria">
+                    <label for="comunitaria">Comunitaria</label>
+                    <input type="radio" id="privada" name="tipo_celebracion" value="privada">
+                    <label for="privada">Privada</label>
+                </td>
+                <td>
+                    <p>Documentos entregados:</p><br>
+                    <input 
+                        type="checkbox" 
+                        id="acta" 
+                        name="documentos"
+                        value="acta"
+                    >
+                    <label for="acta">Acta de Nacimiento</label><br>
+                    <input 
+                        type="checkbox" 
+                        id="cedula_padrinos" 
+                        name="documentos"
+                        value="cedula_padrinos"
+                    >
+                    <label for="cedula_padrinos">Cédula de Padrinos</label><br>
+                    <input 
+                        type="checkbox" 
+                        id="charla" 
+                        name="documentos"
+                        value="charla"
+                    >
+                    <label for="charla">Certificado de Charla</label><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="sacramento">Sacramento a Recibir</label><br>
+                    <select id="sacramento" name="sacramento" required>
+                        <option value="">
+                            Selecciona un Sacramento
+                        </option>
+                        <option value="bautismo">
+                            Bautismo
+                        </option>
+                        <option value="comunion">
+                            Primera Comunión
+                        </option>
+                        <option value="confirmacion">
+                            Confirmación
+                        </option>
+                        <option value="matrimonio">
+                            Matrimonio
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <label for="sede">Capilla / Sede</label><br>
+                    <select id="sede" name="sede" multiple size="2">
+                        <option value="" selected>
+                            Selecciona una Sede
+                        </option>
+                        <option value="matriz">
+                            Templo Matriz
+                        </option>
+                        <option value="san_jose">
+                            Capilla San José
+                        </option>
+                        <option value="del_valle">
+                            Santuario del Valle
+                        </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos Parroquiales</legend>
+                        <label for="padrinos_cant">Número de Padrinos</label><br>
+                        <input type="number" id="padrinos_cant" name="padrinos_cant">
+                        <br>
+                        <label for="asistentes">Número Estimado de Asistentes</label><br>
+                        <input type="number" id="asistentes" name="asistentes">
+                    </fieldset>
+                </td>
+                <td>
+        
+                </td>
+            </tr>
+        </table>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
