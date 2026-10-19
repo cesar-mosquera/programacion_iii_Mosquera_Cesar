@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Registro de sacramentos</title>
+</head>
+<body>
+    <header>
+        <h1>Despacho Parroquial</h1>
+        <p>Registro de sacramentos y celebraciones</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#"
+              method="get"
+              id="registro-sacramentos">
+            <fieldset>
+                <legend>Información del sacramento</legend>
+                <label for="codigo">
+                    Código de partida:
+                </label>
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="SAC-001"
+                       maxlength="10"
+                       required>
+                <br><br>
+                <label for="responsable">
+                    Sacerdote celebrante:
+                </label>
+                <select id="responsable"
+                        name="responsable"
+                        required>
+                    <option value="">
+                        Selecciona un sacerdote
+                    </option>
+                    <option value="carlos">
+                        Padre Carlos
+                    </option>
+                    <option value="juan">
+                        Padre Juan
+                    </option>
+                    <option value="romero">
+                        Monseñor Romero
+                    </option>
+                </select>
+                <br><br>
+                <label for="capilla">
+                    Templo o capilla:
+                </label>
+                <input type="text"
+                       id="capilla"
+                       name="capilla"
+                       placeholder="Ej. Capilla San José"
+                       required>
+                <br><br>
+                <label for="fecha">
+                    Fecha de la celebración:
+                </label>
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características</legend>
+                <p>Tipo de sacramento:</p>
+                <input type="radio"
+                       id="bautismo"
+                       name="sacramento"
+                       value="bautismo"
+                       required>
+                <label for="bautismo">Bautismo</label>
+                <input type="radio"
+                       id="comunion"
+                       name="sacramento"
+                       value="comunion">
+                <label for="comunion">Primera Comunión</label>
+                <input type="radio"
+                       id="matrimonio"
+                       name="sacramento"
+                       value="matrimonio">
+                <label for="matrimonio">Matrimonio</label>
+                <br><br>
+                <label for="asistentes">
+                    Estimado de asistentes (1 a 100):
+                </label>
+                <input type="number"
+                       id="asistentes"
+                       name="asistentes"
+                       min="1"
+                       max="100"
+                       value="50">
+                <p>Requisitos entregados:</p>
+                <input type="checkbox"
+                       id="partida"
+                       name="requisitos"
+                       value="partida">
+                <label for="partida">
+                    Partida de nacimiento
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="padrinos"
+                       name="requisitos"
+                       value="padrinos">
+                <label for="padrinos">
+                    Cédula de los padrinos
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="charla"
+                       name="requisitos"
+                       value="charla">
+                <label for="charla">
+                    Certificado de charlas prematrimoniales / bautismales
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Detalles adicionales</legend>
+                <label for="observaciones">
+                    Observaciones y notas pastorales:
+                </label>
+                <br>
+                <textarea id="observaciones"
+                          name="observaciones"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe datos de los padres, padrinos o notas especiales..."
+                          required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">
+                Registrar sacramento
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <small>
+                Despacho Parroquial - 2026
+            </small>
+        </p>
+    </footer>
+</body>
+</html>

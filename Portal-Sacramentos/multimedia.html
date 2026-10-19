@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Parroquial</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Portal Parroquial de Sacramentos</h1>
+        <p>Recursos Litúrgicos en Audio y Video</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sacramentos.html">Sacramentos</a>
+        <a href="ministros.html">Ministros</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="inscripcion.html">Inscripción</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Cantos Litúrgicos (Audio)</h2>
+            <audio controls>
+                <source src="audios/canto_liturgico.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio HTML5.
+            </audio>
+        </section>
+
+        <section style="margin-top: 20px;">
+            <h2>Ceremonia y Guía de Sacramentos (Video)</h2>
+            <video controls width="100%">
+                <source src="videos/ceremonia_bautismo.mp4" type="video/mp4">
+                <track src="subtitulos/guia_es.vtt" kind="subtitles" srclang="es" label="Español">
+                Tu navegador no soporta el elemento de video HTML5.
+            </video>
+        </section>
+
+        <section style="margin-top: 20px;">
+            <h2>Portal Diocesano (Iframe)</h2>
+            <iframe src="https://www.vatican.va/" width="100%" height="350" title="Portal Oficial de la Iglesia" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 Portal Parroquial - Todos los derechos reservados</small></p>
+    </footer>
+</body>
+</html>
