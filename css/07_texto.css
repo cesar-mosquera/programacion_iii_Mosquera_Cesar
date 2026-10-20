@@ -1,0 +1,73 @@
+.texto-KK{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.texto-regular{
+    font-family: Arial, sans-serif;
+}
+.texto-10px{
+    font-size: 10px;
+}
+.texto-20px{
+    font-size: 20px;
+}
+.texto-40px{
+    font-size: 40px;
+}
+
+.bob{
+    font-weight: 300;
+}
+.pat{
+    font-weight: 400;
+}
+.arenita{
+    font-weight: 500;
+}
+.estilo_letra_normal{
+    font-style: normal;
+}
+.estilo_letra_italica{
+    font-style: italic;
+}
+.izquierda{
+    text-align: left;
+}
+.derecha{
+    text-align: right;
+}
+.centrada{
+    text-align: center;
+}
+.importante{
+    text-decoration: underline;
+    text-decoration-color: gold;
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
+}
+.cancelada{
+    text-decoration: line-through;
+}
+.link{
+    text-decoration: none;
+}
+.titulo-mayuscula{
+    text-transform: uppercase;
+}
+.titulo-minuscula{
+    text-transform: lowercase;
+}
+.titulo-capitalizar{
+    text-transform: capitalize;
+}
+.espaciado-simple{
+    line-height: 1.5;
+}
+.espaciado-doble{
+    line-height: 2; 
+}
+.espacio-letras1{
+    letter-spacing: 1px;
+}
+.espacio-letras2{
+    letter-spacing: 2px;
+}
