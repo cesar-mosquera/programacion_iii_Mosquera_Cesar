@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: #0fdbd1;
+  color: #fff;
+  font: Arial, sans-serif;
+}
+header {
+  background-color: aquamarine;
+}
+h1 {
+  color: beige;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: blueviolet;
+}
+.tarjeta {
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:chocolate;
+    border-radius: 10px;
+}
+.tarjeta h3{
+    margin-top: 0;
+    color:greenyellow;
+}
+
+.bob{
+    border-color: yellow;
+}
+.pat{
+    border-color: pink;
+}
+footer{
+    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
+}

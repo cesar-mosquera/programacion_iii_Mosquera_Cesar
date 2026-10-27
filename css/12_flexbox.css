@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: white;
+}
+.contenedor1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: grey;
+    padding: 20px;    
+
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    background-color: grey;
+    padding: 20px;    
+
+}
+.contenedor3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: grey;
+    padding: 20px;    
+
+}
+.contenedor4 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    background-color: grey;
+    padding: 20px;    
+
+}
+.escuadrones1{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.escuadrones2{
+    display: flex;
+    justify-content: flex-end;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.escuadrones3{
+    display: flex;
+    justify-content: flex-start;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.escuadrones4{
+    display: flex;
+    justify-content: center;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.escuadrones5{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.escuadrones6{
+    display: flex;
+    justify-content: end;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.escuadron{
+    background-color: grey;
+    padding: 20px;
+    border: 2px solid white;
+}
+.personaje{
+    background-color: blue;
+    padding: 20px;
+    border: 2px solid gold;
+}
