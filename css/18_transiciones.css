@@ -89,9 +89,7 @@ step-end: se mantiene en el estado inicial y salta al final.
     border: 3px solid green;
     border-radius: 50%;
 }
-.radar:hover{
 
-}
 .indicador{
     color: green;
     font-size: 70px;
