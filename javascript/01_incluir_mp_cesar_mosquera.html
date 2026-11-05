@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Incluir JavaScript en Portal Sacramentos</title>
+    <script>
+        alert('¡Bienvenido al Portal de Control de Sacramentos!');
+        console.log('Módulo de Sacramentos inicializado en el Head.');
+    </script>
+</head>
+<body>
+
+    <h1>Gestión y Registro Parroquial</h1>
+    <h2>Pruebas de Eventos JavaScript (Inline)</h2>
+
+    <button onclick="alert('¡Solicitud de Bautizo seleccionada!')">
+        Verificar Requisitos
+    </button>
+
+    <br><br>
+
+    <input type="text" 
+           oninput="console.log('Buscando feligrés:', this.value)" 
+           placeholder="Escribe el nombre del feligrés...">
+
+    <br><br>
+
+    <input type="text" 
+           onchange="console.log('Sacramento seleccionado para trámite:', this.value)" 
+           placeholder="Escribe tipo de sacramento y haz clic fuera...">
+
+    <br><br>
+
+    <input type="text" 
+           onfocus="console.log('El operador está editando el expediente...')" 
+           onblur="alert('Atención: Has salido del campo de expediente.')" 
+           placeholder="Número de cédula o cédula del solicitante...">
+
+    <script src="01_incluir.js"></script>
+</body>
+</html>
