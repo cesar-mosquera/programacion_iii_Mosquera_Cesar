@@ -1,0 +1,326 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1A1D20;
+    color: #E2E8F0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+
+header {
+    padding: 2rem 1rem;
+    background-color: #2D3748;
+    text-align: center;
+    border-bottom: 3px solid #F6E05E;
+}
+
+header h1 {
+    color: #F6E05E;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 0 0 0.5rem 0;
+}
+
+/* Contenido */
+
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+/* Escena sacramental */
+
+.escena {
+    position: relative;
+
+    width: 100%;
+    height: 350px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #2D3748,
+            #111827
+        );
+
+    border: 2px solid #718096;
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+/* Destellos / Estrellas */
+
+.estrella {
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: #F6E05E;
+    border-radius: 50%;
+
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.estrella1 {
+    top: 15%;
+    left: 10%;
+}
+
+.estrella2 {
+    top: 30%;
+    left: 75%;
+    animation-delay: 0.5s;
+}
+
+.estrella3 {
+    top: 70%;
+    left: 25%;
+    animation-delay: 1s;
+}
+
+.estrella4 {
+    top: 80%;
+    left: 85%;
+    animation-delay: 1.5s;
+}
+
+.estrella5 {
+    top: 10%;
+    left: 50%;
+    animation-delay: 0.8s;
+}
+
+@keyframes parpadeo {
+
+    from {
+        opacity: 0.2;
+        transform: scale(0.6);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.4);
+    }
+
+}
+
+/* Elemento animado (Paloma / Espíritu Santo) */
+
+.nave {
+    position: absolute;
+
+    top: 45%;
+    left: 10%;
+
+    color: #FEF08A;
+    text-align: center;
+
+    animation-name: vuelo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.nave span {
+    display: block;
+    font-size: 65px;
+}
+
+.nave p {
+    margin: 0;
+    font-weight: bold;
+    color: #E2E8F0;
+}
+
+@keyframes vuelo {
+
+    0% {
+        transform:
+            translate(0, 0)
+            rotate(-10deg);
+    }
+
+    50% {
+        transform:
+            translate(25vw, -50px)
+            rotate(10deg);
+    }
+
+    100% {
+        transform:
+            translate(50vw, 30px)
+            rotate(-5deg);
+    }
+
+}
+
+/* Alerta Litúrgica */
+
+.alerta {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 10px 15px;
+
+    background-color: #B91C1C;
+    color: white;
+
+    border-radius: 8px;
+    font-weight: bold;
+
+    animation: advertencia 2s ease-in-out
+               infinite alternate;
+}
+
+@keyframes advertencia {
+
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+/* Centro pastoral */
+
+.controles {
+    margin-top: 2rem;
+}
+
+h2 {
+    color: #CBD5E0;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.radar-contenedor,
+.estado {
+    padding: 1.5rem;
+
+    background-color: #2D3748;
+    border-radius: 12px;
+}
+
+.radar-contenedor h3,
+.estado h3 {
+    color: #F6E05E;
+}
+
+/* Pulso / Foco */
+
+.radar {
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    width: 180px;
+    height: 180px;
+
+    margin: 2rem auto;
+
+    border: 3px solid #EAB308;
+    border-radius: 50%;
+
+    background-color: #1F2937;
+    overflow: hidden;
+}
+
+.pulso {
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #FACC15;
+    border-radius: 50%;
+
+    animation: pulsoRadar 2s ease-out infinite;
+}
+
+.centro {
+    position: relative;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: white;
+    border-radius: 50%;
+}
+
+@keyframes pulsoRadar {
+
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+
+}
+
+/* Pie de página */
+
+footer {
+    padding: 1.5rem;
+    background-color: #2D3748;
+    text-align: center;
+    border-top: 1px solid #4A5568;
+}
+
+/* Tabletas y computadoras */
+
+@media (min-width: 700px) {
+
+    .panel {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .escena {
+        height: 450px;
+    }
+
+}
+
+/* Movimiento reducido */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .estrella,
+    .nave,
+    .alerta,
+    .pulso {
+        animation: none;
+    }
+
+    .pulso {
+        opacity: 0.35;
+    }
+
+}
